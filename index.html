@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Graphical Password Authentication</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body style="background-image: url(bg5.png);
+background-size: cover;
+background-repeat: no-repeat;">
+
+  <div class="container">
+    <h1>Graphical Password Authentication System</h1>
+    <div class="form-container">
+      <form id="signup-form" class="form">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password (Select 3 Images):</label>
+          <div class="password-container" id="signup-password-container"></div>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <form id="signin-form" class="form">
+        <h2>Sign In</h2>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password (Select the same 3 Images as during sign up):</label>
+          <div class="password-container" id="signin-password-container"></div>
+        </div>
+        <button type="submit" class="btn">Sign In</button>
+      </form>
+    </div>
+  </div>
+  <script src="java.js"></script>
+</body>
+</html>
